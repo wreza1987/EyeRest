@@ -29,24 +29,14 @@ An ultra-lightweight, standalone, zero-dependency Windows utility designed to pr
 
 ## 🛠️ ساخت فایل اجرایی از سورس‌کد (Build from Source)
 
-این پروژه به دو زبان **C#** (نسخه بومی و فوق‌سبک ویندوز) و **Python** پیاده‌سازی شده است.
+این پروژه به زبان **C#** (نسخه بومی و فوق‌سبک ویندوز) پیاده‌سازی شده است.
 
-### روش اول: نسخه C# (پیشنهادی - بدون نیاز به نصب هیچ برنامه‌ای)
 تمامی نسخه‌های ویندوز دارای کامپایلر توکار C# هستند. کافی است در `CMD` دستور زیر را در پوشه پروژه اجرا کنید:
 
 ```cmd
 C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /target:winexe /out:EyeRest.exe EyeRest.cs
 ```
 خروجی یک فایل `EyeRest.exe` با حجم حدود **۲۰ کیلوبایت** خواهد بود.
-
-### روش دوم: نسخه Python
-برای ساخت فایل `.exe` از نسخه پایتون، ابتدا کتابخانه‌های مورد نیاز را نصب کرده و سپس با `PyInstaller` خروجی بگیرید:
-
-```bash
-pip install pystray pillow pyinstaller
-pyinstaller --onefile --noconsole eye_rest.py
-```
-فایل اجرایی نهایی در پوشه `dist` ایجاد می‌شود.
 
 ---
 
